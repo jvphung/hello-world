@@ -12,7 +12,7 @@ public class GitDemo {
     /*****
      * This function should add 'num' to 'previousNumber' and return the sum.
     *****/
-    public double addNumber(double num) {
+    public double addNumber(int num) {
         System.out.print("Add num to previousNumber");
         return 0;
     }
@@ -23,13 +23,7 @@ public class GitDemo {
      *  the function will return the value of (1 * 2 * 3 * 4)
      *****/
     public double findFactorial(int num) {
-        double factorialNumber = 0;
-        
-        while( num != 0 ) {
-            double temp = num % 10;
-            factorialNumber = factorialNumber * 10 + temp;
-            num /= 10;
-        }
+        double factorialNumber = 1;
         
         return factorialNumber;
     }
@@ -40,10 +34,12 @@ public class GitDemo {
      *  the function will return 4321
      *****/
     public double reverseNumber(int num){
-        double newNumber = 1;
+        double newNumber = 0;
         
-        for(int i = 1; i <= num; ++i){
-            newNumber = newNumber * i;
+        while( num != 0 ) {
+            double temp = num % 10;
+            newNumber = newNumber * 10 + temp;
+            num /= 10;
         }
         
         return newNumber;
