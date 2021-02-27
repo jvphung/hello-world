@@ -4,6 +4,7 @@
 public class GitDemo {
     
     private double previousNumber;
+    private double reverseNum;
     
     public GitDemo() {
         previousNumber = 1;
@@ -46,7 +47,9 @@ public class GitDemo {
             num /= 10;
         }
         
-        return newNumber;
+        reverseNum = newNumber;
+        
+        return reverseNum;
     }
     
 }
