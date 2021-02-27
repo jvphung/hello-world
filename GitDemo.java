@@ -1,5 +1,5 @@
 /*****
- * Edit this line to have your name.
+ * Jason Phung
  ******/
 public class GitDemo {
     
@@ -24,6 +24,10 @@ public class GitDemo {
      *****/
     public double findFactorial(int num) {
         double factorialNumber = 1;
+        
+        for(int i = 1; i <= num; ++i){
+            factorialNumber = factorialNumber * i;
+        }
         
         return factorialNumber;
     }
